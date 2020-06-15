@@ -266,7 +266,8 @@
                                     {
                                         "key_code": "r",
                                         "modifiers": [
-                                            "left_gui"
+                                            "left_command",
+                                            "left_shift"
                                         ]
                                     }
                                 ],
@@ -828,14 +829,15 @@
                                 "from": {
                                     "key_code": "spacebar",
                                     "modifiers": {
-                                        "mandatory": "left_alt"
+                                        "mandatory": "left_control"
                                     }
                                 },
                                 "to": [
                                     {
                                         "key_code": "r",
                                         "modifiers": [
-                                            "left_gui"
+                                            "left_command",
+                                            "left_shift"
                                         ]
                                     }
                                 ],
