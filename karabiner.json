@@ -92,7 +92,7 @@
                                 },
                                 "to_after_key_up": [
                                     {
-                                        "shell_command": "/Applications/Karabiner.app/Contents/Library/utilities/bin/warp-mouse-cursor-position front_window middle 0 center 0"
+                                        "shell_command": "~/.config/karabiner/utilities/warp-mouse-cursor-position front_window middle 0 center 0"
                                     }
                                 ],
                                 "to_if_alone": [
@@ -127,7 +127,7 @@
                                 },
                                 "to_after_key_up": [
                                     {
-                                        "shell_command": "/Applications/Karabiner.app/Contents/Library/utilities/bin/warp-mouse-cursor-position front_window middle 0 center 0"
+                                        "shell_command": "~/.config/karabiner/utilities/warp-mouse-cursor-position front_window middle 0 center 0"
                                     }
                                 ],
                                 "to_if_alone": [
@@ -162,7 +162,7 @@
                                 },
                                 "to_after_key_up": [
                                     {
-                                        "shell_command": "/Applications/Karabiner.app/Contents/Library/utilities/bin/warp-mouse-cursor-position front_window middle 0 center 0"
+                                        "shell_command": "~/.config/karabiner/utilities/warp-mouse-cursor-position front_window middle 0 center 0"
                                     }
                                 ],
                                 "to_if_alone": [
@@ -197,7 +197,7 @@
                                 },
                                 "to_after_key_up": [
                                     {
-                                        "shell_command": "/Applications/Karabiner.app/Contents/Library/utilities/bin/warp-mouse-cursor-position front_window middle 0 center 0"
+                                        "shell_command": "~/.config/karabiner/utilities/warp-mouse-cursor-position front_window middle 0 center 0"
                                     }
                                 ],
                                 "to_if_alone": [
@@ -627,7 +627,7 @@
                                 },
                                 "to_after_key_up": [
                                     {
-                                        "shell_command": "/Applications/Karabiner.app/Contents/Library/utilities/bin/warp-mouse-cursor-position front_window middle 0 center 0"
+                                        "shell_command": "~/.config/karabiner/utilities/warp-mouse-cursor-position front_window middle 0 center 0"
                                     }
                                 ],
                                 "to_if_alone": [
@@ -662,7 +662,7 @@
                                 },
                                 "to_after_key_up": [
                                     {
-                                        "shell_command": "/Applications/Karabiner.app/Contents/Library/utilities/bin/warp-mouse-cursor-position front_window middle 0 center 0"
+                                        "shell_command": "~/.config/karabiner/utilities/warp-mouse-cursor-position front_window middle 0 center 0"
                                     }
                                 ],
                                 "to_if_alone": [
@@ -697,7 +697,7 @@
                                 },
                                 "to_after_key_up": [
                                     {
-                                        "shell_command": "/Applications/Karabiner.app/Contents/Library/utilities/bin/warp-mouse-cursor-position front_window middle 0 center 0"
+                                        "shell_command": "~/.config/karabiner/utilities/warp-mouse-cursor-position front_window middle 0 center 0"
                                     }
                                 ],
                                 "to_if_alone": [
@@ -732,7 +732,7 @@
                                 },
                                 "to_after_key_up": [
                                     {
-                                        "shell_command": "/Applications/Karabiner.app/Contents/Library/utilities/bin/warp-mouse-cursor-position front_window middle 0 center 0"
+                                        "shell_command": "~/.config/karabiner/utilities/warp-mouse-cursor-position front_window middle 0 center 0"
                                     }
                                 ],
                                 "to_if_alone": [
@@ -767,7 +767,7 @@
                                 },
                                 "to_after_key_up": [
                                     {
-                                        "shell_command": "/Applications/Karabiner.app/Contents/Library/utilities/bin/warp-mouse-cursor-position front_window middle 0 center 0"
+                                        "shell_command": "~/.config/karabiner/utilities/warp-mouse-cursor-position front_window middle 0 center 0"
                                     }
                                 ],
                                 "to_if_alone": [
