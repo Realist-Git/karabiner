@@ -578,6 +578,70 @@
                         ]
                     },
                     {
+                        "description": "Anki - HOME to start of line ",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^net\\.ichi2\\.anki$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code" : "home",
+                                    "modifiers" : {
+                                        "optional": [ 
+                                            "any" 
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "a",
+                                        "modifiers": [
+                                            "left_control"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                    "description": "Anki - END to end of line ",
+                    "manipulators": [
+                        {
+                            "conditions": [
+                                {
+                                    "bundle_identifiers": [
+                                        "^net\\.ichi2\\.anki$"
+                                    ],
+                                    "type": "frontmost_application_if"
+                                }
+                            ],
+                            "from": {
+                                "key_code" : "end",
+                                "modifiers" : {
+                                    "optional": [ 
+                                        "any" 
+                                    ]
+                                }
+                            },
+                            "to": [
+                                {
+                                    "key_code": "e",
+                                    "modifiers": [
+                                        "left_control"
+                                    ]
+                                }
+                            ],
+                            "type": "basic"
+                        }
+                    ]
+                },
+                    {
                         "description": "non_us_backslash to SEARCH in ANKI",
                         "manipulators": [
                             {
@@ -603,6 +667,43 @@
                                         "modifiers": [
                                             "left_command"
                                         ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "AE - Ctrl + E - search for Effects",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.adobe\\.AfterEffects$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "e",
+                                    "modifiers": {
+                                        "mandatory": ["left_control"],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "5",
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
+                                    },
+                                    {
+                                        "key_code": "f",
+                                        "modifiers": ["left_command"]
                                     }
                                 ],
                                 "type": "basic"
