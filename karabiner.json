@@ -883,6 +883,26 @@
                         ]
                     },
                     {
+                        "description": "F15 to PrintScreen",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "pause",
+                                    "modifiers": {
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "3",
+                                    "modifiers": ["left_command", "left_shift"]
+                                },
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "ESC to ESC, long-press to Glyphs",
                         "manipulators": [
                             {
