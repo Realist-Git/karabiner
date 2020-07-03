@@ -43,6 +43,30 @@
                         ]
                     },
                     {
+                        "description": "Glyphs mouse button4 to G",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.GeorgSeifert\\.Glyphs2$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "pointing_button": "button4"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "g"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "non_us_backslash to SEARCH in ANKI",
                         "manipulators": [
                             {
@@ -282,7 +306,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.apple\\.Terminal$"
+                                            "^com\\.apple\\.Terminal$",
+                                            "^com\\.apple\\.finder$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -545,7 +570,7 @@
                 },
                 "rules": [
                     {
-                        "description": "Anki mouse button3 to previous note",
+                        "description": "---PC Rules--- Anki mouse button3 to previous note",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -590,10 +615,10 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code" : "home",
-                                    "modifiers" : {
-                                        "optional": [ 
-                                            "any" 
+                                    "key_code": "home",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
                                         ]
                                     }
                                 },
@@ -610,37 +635,37 @@
                         ]
                     },
                     {
-                    "description": "Anki - END to end of line ",
-                    "manipulators": [
-                        {
-                            "conditions": [
-                                {
-                                    "bundle_identifiers": [
-                                        "^net\\.ichi2\\.anki$"
-                                    ],
-                                    "type": "frontmost_application_if"
-                                }
-                            ],
-                            "from": {
-                                "key_code" : "end",
-                                "modifiers" : {
-                                    "optional": [ 
-                                        "any" 
-                                    ]
-                                }
-                            },
-                            "to": [
-                                {
-                                    "key_code": "e",
-                                    "modifiers": [
-                                        "left_control"
-                                    ]
-                                }
-                            ],
-                            "type": "basic"
-                        }
-                    ]
-                },
+                        "description": "Anki - END to end of line ",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^net\\.ichi2\\.anki$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "end",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "e",
+                                        "modifiers": [
+                                            "left_control"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
                     {
                         "description": "non_us_backslash to SEARCH in ANKI",
                         "manipulators": [
@@ -688,7 +713,9 @@
                                 "from": {
                                     "key_code": "e",
                                     "modifiers": {
-                                        "mandatory": ["left_control"],
+                                        "mandatory": [
+                                            "left_control"
+                                        ],
                                         "optional": [
                                             "any"
                                         ]
@@ -703,7 +730,9 @@
                                     },
                                     {
                                         "key_code": "f",
-                                        "modifiers": ["left_command"]
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
                                     }
                                 ],
                                 "type": "basic"
@@ -896,7 +925,10 @@
                                 },
                                 "to": {
                                     "key_code": "3",
-                                    "modifiers": ["left_command", "left_shift"]
+                                    "modifiers": [
+                                        "left_command",
+                                        "left_shift"
+                                    ]
                                 },
                                 "type": "basic"
                             }
@@ -1005,7 +1037,9 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.apple\\.Terminal$"
+                                            "^com\\.apple\\.Terminal$",
+                                            "^com\\.apple\\.finder$",
+                                            "^com\\.microsoft\\.VSCode$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -1132,6 +1166,32 @@
                         "is_pointing_device": true,
                         "product_id": 49284,
                         "vendor_id": 1133
+                    },
+                    "ignore": false,
+                    "manipulate_caps_lock_led": false,
+                    "simple_modifications": []
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": true,
+                    "fn_function_keys": [],
+                    "identifiers": {
+                        "is_keyboard": false,
+                        "is_pointing_device": true,
+                        "product_id": 1,
+                        "vendor_id": 6899
+                    },
+                    "ignore": false,
+                    "manipulate_caps_lock_led": false,
+                    "simple_modifications": []
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": true,
+                    "fn_function_keys": [],
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 257,
+                        "vendor_id": 2689
                     },
                     "ignore": false,
                     "manipulate_caps_lock_led": false,
