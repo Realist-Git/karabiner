@@ -43,30 +43,6 @@
                         ]
                     },
                     {
-                        "description": "Glyphs mouse button4 to G",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.GeorgSeifert\\.Glyphs2$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "pointing_button": "button4"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "g"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "non_us_backslash to SEARCH in ANKI",
                         "manipulators": [
                             {
@@ -116,7 +92,7 @@
                                 },
                                 "to_after_key_up": [
                                     {
-                                        "shell_command": "~/.config/karabiner/utilities/warp-mouse-cursor-position front_window middle 0 center 0"
+                                        "shell_command": "/Applications/Karabiner.app/Contents/Library/utilities/bin/warp-mouse-cursor-position front_window middle 0 center 0"
                                     }
                                 ],
                                 "to_if_alone": [
@@ -151,7 +127,7 @@
                                 },
                                 "to_after_key_up": [
                                     {
-                                        "shell_command": "~/.config/karabiner/utilities/warp-mouse-cursor-position front_window middle 0 center 0"
+                                        "shell_command": "/Applications/Karabiner.app/Contents/Library/utilities/bin/warp-mouse-cursor-position front_window middle 0 center 0"
                                     }
                                 ],
                                 "to_if_alone": [
@@ -186,7 +162,7 @@
                                 },
                                 "to_after_key_up": [
                                     {
-                                        "shell_command": "~/.config/karabiner/utilities/warp-mouse-cursor-position front_window middle 0 center 0"
+                                        "shell_command": "/Applications/Karabiner.app/Contents/Library/utilities/bin/warp-mouse-cursor-position front_window middle 0 center 0"
                                     }
                                 ],
                                 "to_if_alone": [
@@ -221,7 +197,7 @@
                                 },
                                 "to_after_key_up": [
                                     {
-                                        "shell_command": "~/.config/karabiner/utilities/warp-mouse-cursor-position front_window middle 0 center 0"
+                                        "shell_command": "/Applications/Karabiner.app/Contents/Library/utilities/bin/warp-mouse-cursor-position front_window middle 0 center 0"
                                     }
                                 ],
                                 "to_if_alone": [
@@ -306,8 +282,7 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.apple\\.Terminal$",
-                                            "^com\\.apple\\.finder$"
+                                            "^com\\.apple\\.Terminal$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -364,62 +339,6 @@
                                 "to": [
                                     {
                                         "key_code": "spacebar"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.eltima\\.elmedia6\\.mas$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    },
-                                    {
-                                        "type": "device_if",
-                                        "identifiers": [
-                                            {
-                                                "vendor_id": 1118,
-                                                "product_id": 1970
-                                            }
-                                        ]
-                                    }
-                                ],
-                                "from": {
-                                    "pointing_button": "button2"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_arrow"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.eltima\\.elmedia6\\.mas$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    },
-                                    {
-                                        "type": "device_if",
-                                        "identifiers": [
-                                            {
-                                                "vendor_id": 1118,
-                                                "product_id": 1970
-                                            }
-                                        ]
-                                    }
-                                ],
-                                "from": {
-                                    "pointing_button": "button1"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_arrow"
                                     }
                                 ],
                                 "type": "basic"
@@ -591,7 +510,7 @@
             "parameters": {
                 "delay_milliseconds_before_open_device": 1000
             },
-            "selected": true,
+            "selected": false,
             "simple_modifications": [
                 {
                     "from": {
@@ -626,7 +545,7 @@
                 },
                 "rules": [
                     {
-                        "description": "---PC Rules--- Anki mouse button3 to previous note",
+                        "description": "Anki mouse button3 to previous note",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -652,70 +571,6 @@
                                     },
                                     {
                                         "key_code": "up_arrow"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Anki - HOME to start of line ",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^net\\.ichi2\\.anki$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "home",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "a",
-                                        "modifiers": [
-                                            "left_control"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Anki - END to end of line ",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^net\\.ichi2\\.anki$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "end",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "e",
-                                        "modifiers": [
-                                            "left_control"
-                                        ]
                                     }
                                 ],
                                 "type": "basic"
@@ -755,79 +610,6 @@
                         ]
                     },
                     {
-                        "description": "AE - Ctrl + E - search for Effects",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.adobe\\.AfterEffects$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "e",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_control"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "5",
-                                        "modifiers": [
-                                            "left_command"
-                                        ]
-                                    },
-                                    {
-                                        "key_code": "f",
-                                        "modifiers": [
-                                            "left_command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "C4D - tilda to command search",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^net\\.maxon\\.cinema4d$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "non_us_backslash",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "c",
-                                        "modifiers": [
-                                            "left_shift"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "f1 to Chrome, long-press to Brave",
                         "manipulators": [
                             {
@@ -845,7 +627,7 @@
                                 },
                                 "to_after_key_up": [
                                     {
-                                        "shell_command": "~/.config/karabiner/utilities/warp-mouse-cursor-position front_window middle 0 center 0"
+                                        "shell_command": "/Applications/Karabiner.app/Contents/Library/utilities/bin/warp-mouse-cursor-position front_window middle 0 center 0"
                                     }
                                 ],
                                 "to_if_alone": [
@@ -880,7 +662,7 @@
                                 },
                                 "to_after_key_up": [
                                     {
-                                        "shell_command": "~/.config/karabiner/utilities/warp-mouse-cursor-position front_window middle 0 center 0"
+                                        "shell_command": "/Applications/Karabiner.app/Contents/Library/utilities/bin/warp-mouse-cursor-position front_window middle 0 center 0"
                                     }
                                 ],
                                 "to_if_alone": [
@@ -915,7 +697,7 @@
                                 },
                                 "to_after_key_up": [
                                     {
-                                        "shell_command": "~/.config/karabiner/utilities/warp-mouse-cursor-position front_window middle 0 center 0"
+                                        "shell_command": "/Applications/Karabiner.app/Contents/Library/utilities/bin/warp-mouse-cursor-position front_window middle 0 center 0"
                                     }
                                 ],
                                 "to_if_alone": [
@@ -925,7 +707,7 @@
                                 ],
                                 "to_if_held_down": [
                                     {
-                                        "shell_command": "open -a '/Applications/Maxon Cinema 4D R21/Cinema 4D.app'"
+                                        "shell_command": "open -a '/Applications/Utilities/Terminal.app'"
                                     }
                                 ],
                                 "type": "basic"
@@ -950,7 +732,7 @@
                                 },
                                 "to_after_key_up": [
                                     {
-                                        "shell_command": "~/.config/karabiner/utilities/warp-mouse-cursor-position front_window middle 0 center 0"
+                                        "shell_command": "/Applications/Karabiner.app/Contents/Library/utilities/bin/warp-mouse-cursor-position front_window middle 0 center 0"
                                     }
                                 ],
                                 "to_if_alone": [
@@ -963,70 +745,6 @@
                                         "shell_command": "open -a 'Elmedia.app'"
                                     }
                                 ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "grave-accent-tilde for VSCODE Hold and Non-Hold",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.microsoft\\.VSCode$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "non_us_backslash",
-                                    "modifiers": {
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "parameters": {
-                                    "basic.to_if_alone_timeout_milliseconds": 150,
-                                    "basic.to_if_held_down_threshold_milliseconds": 200
-                                },
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "grave_accent_and_tilde",
-                                        "modifiers": [
-                                            "left_shift"
-                                        ]
-                                    }
-                                ],
-                                "to_if_held_down": [
-                                    {
-                                        "key_code": "grave_accent_and_tilde"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "F15 to PrintScreen",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "pause",
-                                    "modifiers": {
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": {
-                                    "key_code": "3",
-                                    "modifiers": [
-                                        "left_command",
-                                        "left_shift"
-                                    ]
-                                },
                                 "type": "basic"
                             }
                         ]
@@ -1049,7 +767,7 @@
                                 },
                                 "to_after_key_up": [
                                     {
-                                        "shell_command": "~/.config/karabiner/utilities/warp-mouse-cursor-position front_window middle 0 center 0"
+                                        "shell_command": "/Applications/Karabiner.app/Contents/Library/utilities/bin/warp-mouse-cursor-position front_window middle 0 center 0"
                                     }
                                 ],
                                 "to_if_alone": [
@@ -1134,9 +852,7 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.apple\\.Terminal$",
-                                            "^com\\.apple\\.finder$",
-                                            "^com\\.microsoft\\.VSCode$"
+                                            "^com\\.apple\\.Terminal$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -1267,32 +983,6 @@
                     "ignore": false,
                     "manipulate_caps_lock_led": false,
                     "simple_modifications": []
-                },
-                {
-                    "disable_built_in_keyboard_if_exists": true,
-                    "fn_function_keys": [],
-                    "identifiers": {
-                        "is_keyboard": false,
-                        "is_pointing_device": true,
-                        "product_id": 1,
-                        "vendor_id": 6899
-                    },
-                    "ignore": false,
-                    "manipulate_caps_lock_led": false,
-                    "simple_modifications": []
-                },
-                {
-                    "disable_built_in_keyboard_if_exists": true,
-                    "fn_function_keys": [],
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "is_pointing_device": false,
-                        "product_id": 257,
-                        "vendor_id": 2689
-                    },
-                    "ignore": false,
-                    "manipulate_caps_lock_led": false,
-                    "simple_modifications": []
                 }
             ],
             "fn_function_keys": [
@@ -1397,7 +1087,7 @@
             "parameters": {
                 "delay_milliseconds_before_open_device": 1000
             },
-            "selected": false,
+            "selected": true,
             "simple_modifications": [
                 {
                     "from": {
